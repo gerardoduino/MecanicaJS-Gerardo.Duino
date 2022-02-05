@@ -25,7 +25,8 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     grid-area: cabeza;
     color: white;
     padding: 2%;
@@ -38,17 +39,18 @@ header {
 }
 footer {
     grid-area: footer;
-    background-color: black;
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     color: white;
     padding: 3%;
     text-align: center;
 
    
 }
-
 section#productos {
     grid-area: productos; 
-    background-color: burlywood;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);  
     padding: 10%;
     margin-top: 5%;
     display: flex;
@@ -58,7 +60,8 @@ section#productos {
     
 section#mapa {
     grid-area: mapa; 
-   background-color: wheat;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
     padding: 15%;
     display: flex;
     flex-direction: row;
@@ -68,7 +71,8 @@ section#mapa {
 /*menu*/
 nav {
     grid-area: menu;
-    background-color:black;
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     padding: 0.5%;
     margin-top: 8%;
     position: fixed;
@@ -78,7 +82,7 @@ nav {
 .flexMenu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 span {
@@ -118,10 +122,34 @@ img {
 }
 
 .tituloDe {
-    margin: 5%;
+    margin-top:  5%;
+    margin-bottom: 2%;
 }
+
+h3 {
+    margin-bottom: 5%;
+}
+
+
 
 .parrafoDe{
      margin-top:  5%;
 }
 
+/* transiciones */
+.transicion {
+    background-color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    transition: background-color 1s linear;
+ }
+ .transicion:hover{
+    background-color: purple;
+ }
+
+.borde {
+    background-color: white ;
+    border:2px solid black;
+    transition: border 2s ease;
+  }
+  .borde:hover {
+    border: 4px dotted #333;
+  }
